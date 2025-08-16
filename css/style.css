@@ -1,0 +1,53 @@
+
+/* ModelConnect Miami - English static prototype */
+:root{
+  --bg:#ffffff;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --primary:#0ea5e9;
+  --primary-dark:#0284c7;
+  --card:#f9fafb;
+  --border:#e5e7eb;
+}
+*{box-sizing:border-box}
+html{font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; line-height:1.5; color:var(--text);}
+body{margin:0; background:var(--bg);}
+a{color:var(--primary); text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px; margin:0 auto; padding:1rem}
+header{border-bottom:1px solid var(--border); background:#fff; position:sticky; top:0; z-index:10}
+.brand{display:flex; align-items:center; gap:.75rem; font-weight:700; font-size:1.25rem}
+.brand .dot{width:10px;height:10px;border-radius:6px;background:var(--primary)}
+nav ul{display:flex; gap:1rem; list-style:none; padding:0; margin:0}
+.header-inner{display:flex; align-items:center; justify-content:space-between}
+.hero{padding:2rem 0}
+h1{font-size:1.8rem; margin:0 0 .75rem}
+h2{font-size:1.2rem; margin:1.5rem 0 .75rem}
+.grid{display:grid; grid-template-columns:repeat(12,1fr); gap:1rem}
+.card{background:var(--card); border:1px solid var(--border); border-radius:10px; overflow:hidden; display:flex; flex-direction:column}
+.card img{width:100%; height:180px; object-fit:cover; background:#ddd}
+.card-body{padding:.75rem}
+.meta{color:var(--muted); font-size:.9rem}
+.badge{display:inline-block; padding:.15rem .5rem; border-radius:999px; background:#e0f2fe; color:#075985; font-weight:600; font-size:.75rem}
+.sections{display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1rem}
+.sidebar{border:1px solid var(--border); background:#fff; border-radius:10px; padding:1rem}
+.list{display:flex; flex-wrap:wrap; gap:.5rem; padding:0; margin:0; list-style:none}
+.list a{display:inline-block; padding:.35rem .6rem; border:1px solid var(--border); border-radius:999px; color:var(--text)}
+.list a:hover{border-color:var(--primary); color:var(--primary)}
+.footer{border-top:1px solid var(--border); color:var(--muted); padding:1.5rem 0; margin-top:2rem}
+.breadcrumb{font-size:.9rem; color:var(--muted); margin:.5rem 0 1rem}
+.breadcrumb a{color:var(--muted)}
+button.cta{appearance:none; border:none; background:var(--primary); color:#fff; padding:.7rem 1rem; border-radius:8px; cursor:pointer; font-weight:600}
+button.cta:hover{background:var(--primary-dark)}
+.profile{display:grid; grid-template-columns:1fr; gap:1rem}
+.gallery{display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1rem}
+.info{display:grid; grid-template-columns:1fr 1fr; gap:1rem}
+.info div{background:var(--card); border:1px solid var(--border); border-radius:10px; padding:1rem}
+.description{background:var(--card); border:1px solid var(--border); border-radius:10px; padding:1rem}
+@media(min-width:900px){
+  .profile{grid-template-columns:2fr 1fr}
+}
+/* Utilities */
+.mt-1{margin-top:.5rem}
+.mt-2{margin-top:1rem}
+.mt-3{margin-top:1.5rem}
